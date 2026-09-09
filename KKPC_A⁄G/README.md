@@ -1,4 +1,4 @@
-# International Central Gospel Church (ICGC) Web Application
+# Kingdom Keys Prayer Chapel A/G Church (KKPC A/G) Web Application
 Built with **Vue 3** (Composition API) and **Tailwind CSS**. Cloned directly from https://centralgospel.com/.
 
 ## Features Included
