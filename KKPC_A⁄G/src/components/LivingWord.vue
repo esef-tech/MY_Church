@@ -1,11 +1,11 @@
 <template>
-  <section class="py-20 bg-neutral-950/60 border-y border-neutral-800/80">
+  <section class="py-20 bg-[#0f172a] border-y border-neutral-800/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto mb-12">
         <span class="text-xs uppercase tracking-widest text-amber-500 font-bold">Daily Inspiration</span>
         <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Living Word Devotional</h2>
-        <p class="text-neutral-400 text-sm mt-3">Spiritual nourishment and pastoral wisdom for daily victory by Pastor Mensa Otabil.</p>
+        <p class="text-neutral-400 text-sm mt-3">Spiritual nourishment and pastoral wisdom for daily victory by Pastor William Abaidoo.</p>
       </div>
 
       <!-- Devotional Card -->
@@ -15,7 +15,7 @@ ow-2xl relative overflow-hidden">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-neutral-800 pb-6 mb-6">
           <div>
             <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-2">
-              Today's Devotional • Sept 7
+              Today's Devotional • Sept 13
             </span>
             <h3 class="text-2xl font-bold text-white">Standing Firm in the Promise</h3>
             <p class="text-sm text-neutral-400 mt-1">Scripture: <span class="text-amber-400 font-semibold">Hebrews 10:23</span></p>
@@ -31,7 +31,7 @@ ow-2xl relative overflow-hidden">
             </button>
             <div class="text-xs">
               <span class="block font-semibold text-white">Listen to Audio</span>
-              <span class="text-neutral-400">Pastor Mensa Otabil (6:45)</span>
+              <span class="text-neutral-400">Pastor William Abaidoo (6:45)</span>
             </div>
           </div>
         </div>
