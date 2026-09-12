@@ -11,7 +11,7 @@
             KKPC A/G
           </span>
           <span class="block text-xs uppercase tracking-widest text-amber-500 font-medium">
-            Kingdom Keys Prayer Chapel Assemblies of God
+            Kingdom Keys Prayer Chapel <br class="hidden sm:inline" /> Assemblies of God church
           </span>
         </div>
       </a>
