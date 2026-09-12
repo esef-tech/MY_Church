@@ -22,6 +22,7 @@
           <button @click="$emit('navigate', 'sermons')" class="hover:text-amber-400">Sermons</button>
           <button @click="$emit('navigate', 'giving')" class="hover:text-amber-400">Giving</button>
           <button @click="$emit('navigate', 'branches')" class="hover:text-amber-400">Branches</button>
+          <button @click="$emit('navigate', 'events')" class="hover:text-amber-400">Events</button>
         </div>
 
         <div class="flex gap-3">
