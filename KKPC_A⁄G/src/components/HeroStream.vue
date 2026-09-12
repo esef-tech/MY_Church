@@ -4,13 +4,13 @@
       <div class="grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <span class="inline-flex items-center rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
-            Welcome Home
+            Welcome to Kingdom Keys Prayer Chapel <br> Assemblies of God church <br class="hidden sm:inline" /> 
           </span>
           <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-white">
             Experience <span class="text-amber-400">faith, hope, and renewal</span>
           </h1>
           <p class="mt-6 max-w-xl text-base sm:text-lg text-neutral-300">
-            Join the International Central Gospel Church in worship, discipleship, and transformative community prayer.
+            Join the Kingdom Keys Prayer Chapel family in worship, discipleship, and transformative community prayer across Arizona. A family across Arizona pursuing God in worship, discipleship, and transformative prayer.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-4">
@@ -24,7 +24,7 @@
 
           <div class="mt-10 flex flex-wrap gap-6 text-sm text-neutral-300">
             <div>
-              <div class="text-2xl font-black text-white">12k+</div>
+              <div class="text-2xl font-black text-white">1k+</div>
               <div class="text-neutral-400">Worshippers</div>
             </div>
             <div>
@@ -32,7 +32,7 @@
               <div class="text-neutral-400">Prayer support</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-white">40+</div>
+              <div class="text-2xl font-black text-white">1</div>
               <div class="text-neutral-400">Locations</div>
             </div>
           </div>
@@ -51,7 +51,7 @@
                   <h2 class="mt-2 text-2xl font-bold text-white">The Power of Faith</h2>
                 </div>
                 <div class="flex items-center justify-between text-sm text-neutral-200">
-                  <span>8:00 AM • Accra</span>
+                  <span>8:00 AM • Tucson, AZ</span>
                   <button class="rounded-full bg-amber-500 px-4 py-2 font-semibold text-neutral-950">Watch</button>
                 </div>
               </div>
