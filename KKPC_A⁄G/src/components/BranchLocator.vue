@@ -19,11 +19,11 @@
 
 <script setup>
 const branches = [
-  { city: 'Accra', address: 'ICGC Christ Temple', service: 'Sunday • 7:00 AM / 9:30 AM' },
-  { city: 'Kumasi', address: 'ICGC Temple', service: 'Sunday • 8:00 AM / 10:00 AM' },
-  { city: 'London', address: 'ICGC London', service: 'Sunday • 9:00 AM / 11:00 AM' },
-  { city: 'New York', address: 'ICGC New York', service: 'Sunday • 9:30 AM / 11:30 AM' },
-  { city: 'Cape Town', address: 'ICGC Cape Town', service: 'Sunday • 8:30 AM / 10:30 AM' },
-  { city: 'Nairobi', address: 'ICGC Nairobi', service: 'Sunday • 9:00 AM / 11:00 AM' }
+  { city: 'Tucson', address: '3275 N Swan Rd, Tucson, AZ 85712', service: 'Sunday • 7:00 AM / 9:30 AM' },
+  { city: 'Phoenix', address: '1440 E Northern Ave, Phoenix, AZ 85020', service: 'Sunday • 8:00 AM / 10:00 AM' },
+  { city: 'Flagstaff', address: '1900 N Fort Valley Rd, Flagstaff, AZ 86001', service: 'Sunday • 9:00 AM / 11:00 AM' },
+  { city: 'Glendale', address: '7550 W Bethany Home Rd, Glendale, AZ 85303', service: 'Sunday • 9:30 AM / 11:30 AM' },
+  { city: 'Mesa', address: '2100 S Power Rd, Mesa, AZ 85209', service: 'Sunday • 8:30 AM / 10:30 AM' },
+  { city: 'Tempe', address: '815 E University Dr, Tempe, AZ 85281', service: 'Sunday • 9:00 AM / 11:00 AM' }
 ]
 </script>
