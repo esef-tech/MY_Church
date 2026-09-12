@@ -4,7 +4,7 @@
       <div class="text-center mb-12">
         <span class="text-xs uppercase tracking-widest text-amber-500 font-bold">Online Giving</span>
         <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Honour the Lord with Your Substance</h2>
-        <p class="text-neutral-400 text-sm mt-3">Tithe, First Fruits, Offering, and Central Aid Scholarship donations.</p>
+        <p class="text-neutral-400 text-sm mt-3">Tithe, First Fruits, Offering, and KKPC A/G Aid Scholarship donations.</p>
       </div>
 
       <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
@@ -96,16 +96,16 @@ const categories = [
 ]
 
 const methods = [
-  { id: 'momo-mtn', name: 'MTN MoMo' },
-  { id: 'momo-telecel', name: 'Telecel Cash' },
-  { id: 'card', name: 'Visa / Master' },
-  { id: 'ussd', name: 'USSD (*714*33#)' }
+  { id: 'visa-master-card', name: 'Visa/Master' },
+  { id: 'payPal', name: 'payPal' },
+  { id: 'cash-app', name: 'Cash App' },
+  { id: 'Zelle', name: 'Zelle' }
 ]
 
 const selectedCategory = ref('tithe')
-const currency = ref('GHS')
+const currency = ref('USD')
 const amount = ref(100)
-const selectedMethod = ref('momo-mtn')
+const selectedMethod = ref('visa-master-card')
 
 const submitGiving = () => {
   alert(`Thank you for honouring the Lord with your ${selectedCategory.toUpperCase()} of ${currency.value} ${amount.value}!`)

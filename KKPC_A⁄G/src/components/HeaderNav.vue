@@ -11,7 +11,7 @@
             KKPC A/G
           </span>
           <span class="block text-xs uppercase tracking-widest text-amber-500 font-medium">
-            Kingdom Keys Prayer Chapel <br class="hidden sm:inline" /> Assemblies of God church
+            Kingdom Keys Prayer   <button @click="$emit('navigate', 'events')" class="hover:text-amber-400 transition-colors"></button> Chapel <br class="hidden sm:inline" /> Assemblies of God church
           </span>
         </div>
       </a>
@@ -24,6 +24,7 @@
         <button @click="$emit('navigate', 'central-aid')" class="hover:text-amber-400 transition-colors">KKPC Aid</button>
         <button @click="$emit('navigate', 'branches')" class="hover:text-amber-400 transition-colors">Locate Church</button>
         <button @click="$emit('navigate', 'events')" class="hover:text-amber-400 transition-colors">Events</button>
+          <button @click="$emit('navigate', 'about')" class="hover:text-amber-400 transition-colors">About</button>
       </nav>
 
       <!-- Action Buttons -->
@@ -61,9 +62,10 @@
         <button @click="navClick('home')" class="text-left text-neutral-200 hover:text-amber-400 py-1">Home</button>
         <button @click="navClick('devotional')" class="text-left text-neutral-200 hover:text-amber-400 py-1">Living Word Devotional</button>
         <button @click="navClick('sermons')" class="text-left text-neutral-200 hover:text-amber-400 py-1">Sermons & Media</button>
-        <button @click="navClick('central-aid')" class="text-left text-neutral-200 hover:text-amber-400 py-1">Central Aid Outreach</button>
+        <button @click="navClick('central-aid')" class="text-left text-neutral-200 hover:text-amber-400 py-1">KKPC A/G Outreach</button>
         <button @click="navClick('branches')" class="text-left text-neutral-200 hover:text-amber-400 py-1">Locate a Temple</button>
         <button @click="navClick('events')" class="text-left text-neutral-200 hover:text-amber-400 py-1">Conferences & Events</button>
+        <button @click="navClick('about')" class="text-left text-neutral-200 hover:text-amber-400 py-1">About</button>
       </div>
       <div class="pt-4 border-t border-neutral-800 flex flex-col space-y-2">
         <button @click="$emit('open-give'); mobileOpen = false" class="w-full py-3 text-center font-bold bg-amber-500 text-neutral-950 rounded-xl">
