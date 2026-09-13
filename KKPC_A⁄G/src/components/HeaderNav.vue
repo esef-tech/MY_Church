@@ -115,21 +115,27 @@ const handleNavClick = (link) => {
     <!-- Main navbar: brand + nav links -->
     <div class="border-t border-gray-800">
       <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <!-- Brand -->
-        <a href="https://kkpcag.vercel.app/" class="flex items-center space-x-3 group">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center text-neutral-950 font-extrabold text-xl shadow-lg shadow-amber-500/20">
-            <img src="https://www.agghana.org/_nuxt/logo.TuZ7AZUr.png" alt="AG" class="w-6 h-6" />
-          </div>
-          <div>
-            <span class="block text-lg font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors">
-              KKPC A/G
-            </span>
-            <span class="block text-xs uppercase tracking-widest text-amber-500 font-medium">
-              Kingdom Keys Prayer Chapel <br class="hidden sm:inline" /> Assemblies of God church
-            </span>
-          </div>
-        </a>
-
+        <button
+  @click="$emit('navigate', 'home')"
+  class="flex items-center space-x-3 group focus:outline-none"
+  aria-label="Go to home page"
+>
+  <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+    <img
+      src="https://www.agghana.org/_nuxt/logo.TuZ7AZUr.png"
+      alt="AG"
+      class="w-6 h-6"
+    />
+  </div>
+  <div>
+    <span class="block text-lg font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors">
+      KKPC A/G
+    </span>
+    <span class="block text-xs uppercase tracking-widest text-amber-500 font-medium">
+      Kingdom Keys Prayer Chapel <br class="hidden sm:inline" /> Assemblies of God church
+    </span>
+  </div>
+</button>
         <!-- Desktop nav links -->
         <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
           <li v-for="link in navLinks" :key="link.label">
