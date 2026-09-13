@@ -3,40 +3,51 @@
     <!-- Navigation Bar -->
     <HeaderNav 
       :active-section="activeSection" 
-      @navigate="scrollToSection"
+      @navigate="handleNavigate"
       @open-give="showGiveModal = true"
       @open-prayer="showPrayerModal = true"
     />
 
     <main class="flex-1">
-      <!-- Hero / Live Stream section -->
-      <HeroStream 
+      <!-- About — rendered as its own standalone page -->
+      <About
+        v-if="currentPage === 'about'"
+        @navigate="handleNavigate"
         @open-give="showGiveModal = true"
         @open-prayer="showPrayerModal = true"
       />
 
-      <!-- Living Word Daily Devotional -->
-      <LivingWord id="devotional" />
+      <!-- Home page content -->
+      <template v-else>
+        <!-- Hero / Live Stream section -->
+        <HeroStream 
+          @open-give="showGiveModal = true"
+          @open-prayer="showPrayerModal = true"
+        />
 
-      <!-- Sermons & Media Archive -->
-      <SermonsArchive id="sermons" />
+        <!-- Living Word Daily Devotional -->
+        <LivingWord id="devotional" />
 
-      <!-- Online Giving & Tithing Portal -->
-      <GivingPortal id="giving" />
+        <!-- Sermons & Media Archive -->
+        <SermonsArchive id="sermons" />
 
-      <!-- Central Aid Educational Scholarship Fund -->
-      <CentralAid id="central-aid" @open-give="showGiveModal = true" />
+        <!-- Online Giving & Tithing Portal -->
+        <GivingPortal id="giving" />
 
-      <!-- Global Church & Branch Locator -->
-      <BranchLocator id="branches" />
+        <!-- Central Aid Educational Scholarship Fund -->
+        <CentralAid id="central-aid" @open-give="showGiveModal = true" />
 
-      <!-- Events & Conferences (Greater Works) -->
-      <EventsList id="events" />
+        <!-- Global Church & Branch Locator -->
+        <BranchLocator id="branches" />
+
+        <!-- Events & Conferences (Greater Works) -->
+        <EventsList id="events" />
+      </template>
     </main>
 
     <!-- Footer -->
     <FooterSection 
-      @navigate="scrollToSection"
+      @navigate="handleNavigate"
       @open-give="showGiveModal = true"
       @open-prayer="showPrayerModal = true"
     />
@@ -70,7 +81,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, nextTick } from 'vue'
 import HeaderNav from './components/HeaderNav.vue'
 import HeroStream from './components/HeroStream.vue'
 import LivingWord from './components/LivingWord.vue'
@@ -81,8 +92,11 @@ import BranchLocator from './components/BranchLocator.vue'
 import EventsList from './components/EventsList.vue'
 import PrayerConnect from './components/PrayerConnect.vue'
 import FooterSection from './components/FooterSection.vue'
+import About from './components/About.vue'
 
 const activeSection = ref('home')
+// 'home' renders the single-page sections; 'about' renders the About page on its own
+const currentPage = ref('home')
 const showGiveModal = ref(false)
 const showPrayerModal = ref(false)
 
@@ -92,5 +106,40 @@ const scrollToSection = (id) => {
   if (el) {
     el.scrollIntoView({ behavior: 'smooth' })
   }
+}
+
+// Central navigation handler — routes 'about' to its own page,
+// everything else to in-page scrolling (switching back home first if needed)
+const handleNavigate = (id) => {
+  // About is a standalone page — swap the page instead of scrolling
+  if (id === 'about') {
+    currentPage.value = 'about'
+    activeSection.value = 'about'
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+
+  // 'home' takes us back to the home page (top)
+  if (id === 'home') {
+    currentPage.value = 'home'
+    activeSection.value = 'home'
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+
+  // For section ids (devotional, sermons, giving, etc.):
+  // if we were on the About page, return to home first, then scroll
+  if (currentPage.value !== 'home') {
+    currentPage.value = 'home'
+    activeSection.value = id
+    nextTick(() => {
+      // wait for home sections to mount before scrolling
+      setTimeout(() => scrollToSection(id), 50)
+    })
+    return
+  }
+
+  // Already on home — just scroll to the section
+  scrollToSection(id)
 }
 </script>
