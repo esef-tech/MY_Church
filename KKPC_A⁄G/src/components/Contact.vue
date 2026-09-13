@@ -6,7 +6,7 @@ const phoneNumber = '+1 646-294-6127'
 const phoneNumberTel = '+16462946127'
 const email = 'kkprayerchapel@gmail.com'
 const officeHours = '9:00am - 5:00pm, Monday - Friday'
-const officeLocation = ['933 College View Dr.', 'Redding, CA 96003']
+const officeLocation = [' 1200 W Speedway Blvd , Tucson, AZ, United States, 85745', 'Oro Valley, AZ · Marana, AZ · Tucson, AZ · Sahuarita, AZ']
 
 // ---- Social links (matching the Navbar) ----
 const socials = [
@@ -252,10 +252,10 @@ const footerColumns = [
 
           <!-- Campus locations -->
           <div>
-            <h5 class="text-2xl font-normal mb-4">Campus Locations</h5>
-            <p class="text-base text-gray-700 mb-3">Learn more about our campuses and offices.</p>
+            <h5 class="text-2xl font-normal mb-4">Chapel Locations</h5>
+            <p class="text-base text-gray-700 mb-3">Learn more about our chapels and offices.</p>
             <router-link to="/campuses" class="inline-flex items-center gap-2 text-base text-black underline hover:text-gray-600 transition-colors">
-              View Campuses
+              View Chapels
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
                 <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
               </svg>
