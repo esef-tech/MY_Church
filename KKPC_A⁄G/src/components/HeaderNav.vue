@@ -20,13 +20,13 @@ const socials = [
 // - `type: 'section'` → in-page scroll via ID selector (everything else)
 const navLinks = ref([
   { label: 'Home',       target: 'home',       type: 'page' },
-  { label: 'About',      target: 'about',      type: 'page' },
   { label: 'Sermons',    target: 'sermons',    type: 'section' },
   { label: 'Events',     target: 'events',     type: 'section' },
-  { label: 'Contact',    target: 'contact',    type: 'page' },
   { label: 'Branches',   target: 'branches',   type: 'section' },
   { label: 'Giving',     target: 'giving',     type: 'section' },
   { label: 'Devotional', target: 'devotional', type: 'section' },
+    { label: 'Contact',    target: 'contact',    type: 'page' },
+   { label: 'About',      target: 'about',      type: 'page' },
 ])
 
 const mobileMenuOpen = ref(false)
