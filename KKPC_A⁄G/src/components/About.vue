@@ -159,7 +159,8 @@
         <h4 class="mb-12 font-serif text-2xl font-medium uppercase tracking-[0.15em] text-neutral-900 md:text-3xl">
           More About KKPC A/G
         </h4>
-        <div class="grid gap-6 md:grid-cols-3">
+        <div cl
+ass="grid gap-6 md:grid-cols-3">
           <div
             v-for="card in moreCards"
             :key="card.title"
