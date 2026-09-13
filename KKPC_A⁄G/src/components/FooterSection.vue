@@ -6,7 +6,11 @@
           <div class="flex items-center space-x-3">
             <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 text-lg font-black text-neutral-950">
               <img src="https://www.agghana.org/_nuxt/logo.TuZ7AZUr.png" alt="AG" class="w-6 h-6" />
+<<<<<<< HEAD
             </div>   <button @click="$emit('navigate', 'events')" class="hover:text-amber-400 transition-colors">Events</button>
+=======
+            </div>   <button @click="$emit('navigate', 'events')" class="hover:text-amber-400 transition-colors"></button>
+>>>>>>> Feature
             <div>
               <div class="text-lg font-bold text-white">KKPC A/G</div>
               <div class="text-[10px] uppercase tracking-[0.22em] text-amber-500"> Kingdom Keys Prayer Chapel <br class="hidden sm:inline" /> Assemblies of God church</div>
@@ -22,6 +26,7 @@
           <button @click="$emit('navigate', 'sermons')" class="hover:text-amber-400">Sermons</button>
           <button @click="$emit('navigate', 'giving')" class="hover:text-amber-400">Giving</button>
           <button @click="$emit('navigate', 'branches')" class="hover:text-amber-400">Branches</button>
+          <button @click="$emit('navigate', 'events')" class="hover:text-amber-400">Events</button>
         </div>
 
         <div class="flex gap-3">
