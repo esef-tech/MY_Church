@@ -30,7 +30,7 @@
 
           <div class="mt-8 flex flex-wrap gap-4">
             <button @click="$emit('open-give')" class="rounded-xl bg-amber-500 px-6 py-3 text-sm font-bold text-neutral-950 shadow-lg shadow-amber-500/20 transition hover:bg-amber-400">
-              Join Online
+              Give Online
             </button>
             <button @click="$emit('open-prayer')" class="rounded-xl border border-neutral-700 bg-neutral-900/60 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition hover:border-amber-500 hover:text-amber-400">
               Prayer Request
